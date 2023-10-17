@@ -3,49 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Verificación</title>
+    <title> Proyecto 1 </title>
 </head>
 <body>
-    <h1>Lista de Verificación</h1>
+    <h1> Lista de Tareas </h1>
+
     <form action="conex.php" method="post">
-        <label for="id">ID:</label>
-        <input type="text" id="id" name="id"><br>
+        <!-- <label for="id">ID:</label>
+        <input type="text" id="id" name="id"><br> -->
 
         <label for="titulo">Título:</label>
-        <input type="text" id="titulo" name="titulo"><br>
-
+        <input type="text" id="titulo" name="titulo" required><br>
+        <br>
         <label for="descripcion">Descripción:</label>
-        <input type="text" id="descripcion" name="descripcion"><br>
-
+        <input type="text" id="descripcion" name="descripcion" required><br>
+        <br>
         <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado"><br>
-
+        <input type="text" id="estado" name="estado" required><br>
+        <br>
         <label for="fecha">Fecha:</label>
-        <input type="text" id="fecha" name="fecha"><br>
-
+        <input type="date" id="fecha" name="fecha" required><br>
+        <br>
         <label for="autor">Autor:</label>
-        <input type="text" id="autor" name="autor"><br>
-
+        <input type="text" id="autor" name="autor" required><br>
+        <br>
         <label for="tipo_de_tarea">Tipo de Tarea:</label>
-        <input type="text" id="tipo_de_tarea" name="tipo_de_tarea"><br>
-
+        <input type="text" id="tipo_de_tarea" name="tipo_de_tarea" required><br>
+        <br>
         <input type="submit" value="Guardar Tarea">
-        <!-- <label for="tarea">Tarea:</label>
-        <input type="text" id="tarea" name="tarea" required>
-        <br>
-        <label for="completada">Completada:</label>
-        <input type="text" id="tarea" name="tarea" required>
-        <input type="checkbox" id="completada" name="completada">
-        <br>
-        <input type="submit" value="Guardar"> -->
-    </form>
+        <input type="reset" value="Borrar Todo">
 
-    <h2>Tareas Pendientes:</h2>
-    <ul>
-        <?php
-        // Aquí se mostrarán las tareas pendientes
-        ?>
-    </ul>
+        <input type="submit" value="Ver Todas Las Tareas" placeholder="tareas.php">
+
+    </form>
 
 </body>
 </html>
